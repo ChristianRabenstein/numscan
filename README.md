@@ -93,13 +93,14 @@ print(lucky.counts)
 
 ## All Available Counters
 
-| Class              | Description                         |
-|-------------------|-------------------------------------|
-| `FibonacciCounter` | Matches Fibonacci numbers up to 1000 |
-| `PrimeCounter`     | Matches prime numbers up to 1000     |
-| `SquareCounter`    | Matches perfect square numbers       |
-| `PopCultureCounter`| Matches 42, 1337, 666, and more      |
-| `IntegerCounter`   | Matches all integer numbers          |
+| Class                | Description                                                                  |
+|----------------------|------------------------------------------------------------------------------|
+| `DatePatternCounter` | It supports multiple formats and checks all dates in a specified date range. |
+| `FibonacciCounter`   | Matches Fibonacci numbers up to 1000                                         |
+| `IntegerCounter`     | Matches all integer numbers                                                  |
+| `PopCultureCounter`  | Matches 42, 1337, 666, and more                                              |
+| `PrimeCounter`       | Matches prime numbers up to 1000                                             |
+| `SquareCounter`      | Matches perfect square numbers                                               |
 
 ## Project Structure (Package Layout)
 
@@ -107,6 +108,7 @@ print(lucky.counts)
 numscan/
 │
 ├── base.py           # Base class: NumberCounter
+├── date.py           # DatePatternCounter
 ├── fibonacci.py      # FibonacciCounter
 ├── prime.py          # PrimeCounter
 ├── squares.py        # SquareCounter
