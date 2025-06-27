@@ -5,7 +5,11 @@ def print_top_counts(counter, name: str, top_n: int = 5):
     counts = counter.counts
     top = sorted(counts.items(), key=lambda x: x[1], reverse=True)[:top_n]
     for number, count in top:
-        print(f"{number}: {count} times")
+        if isinstance(counter, PopCultureCounter):
+            description = counter.get_description(number)
+            print(f"{number}: {count} times — {description}")
+        else:
+            print(f"{number}: {count} times")
 
 def main():
     filepath = "example.txt"  # Replace with your actual file
